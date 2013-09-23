@@ -1,0 +1,7 @@
+<form ng-submit="addPlayer()">
+  <input ng-model="newPlayer" type="text" id="insert-name" class="form-control input-hg" placeholder="Enter player's name" />
+</form>
+<hr />
+<ul class="list-group">
+<li ng-repeat="player in players" class="list-group-item">{{player}}</li>
+</ul>

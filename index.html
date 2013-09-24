@@ -44,11 +44,7 @@
         <div class="content">
             <div ng-view></div>
         </div>
-        <div clas="bottom-navigation">
-          <button class="btn btn-hg btn-primary">
-            <a href=#/{{buttonHref}}>{{button}}</a>
-          </button>
-        </div>    
+        <div clas="bottom-navigation" ng-include="buttonTemplate"></div>    
         
       </div>
     </div>

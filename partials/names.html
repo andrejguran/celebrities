@@ -1,0 +1,12 @@
+<h4>{{player}}</h4>
+<p>
+    Please add celebrities
+</p>
+<hr />
+<form ng-submit="addName()">
+  <input ng-model="newName" type="text" class="form-control input-hg" placeholder="Enter celebrity's name" />
+</form>
+<hr />
+<ul class="list-group">
+  <li ng-repeat="name in names" class="list-group-item">{{name}}</li>
+</ul>

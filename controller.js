@@ -124,7 +124,7 @@ function RoundCtrl($scope, $rootScope, $routeParams, $timeout, $window, db) {
     if ($scope.countDown > 0) {
       mytimeout = $timeout($scope.onTimeout,1000);
     } else {
-       $window.location.href = '/#/change/' + $scope.round + '/' + $scope.player;
+       $window.location.href = '#/change/' + $scope.round + '/' + $scope.player;
     }
   }
   var mytimeout = $timeout($scope.onTimeout,1000);
@@ -158,9 +158,9 @@ function RoundCtrl($scope, $rootScope, $routeParams, $timeout, $window, db) {
 
     if ($scope.guessed == $scope.namesLength) {
       if ($scope.round == 3) {
-        $window.location.href = '/#/score';
+        $window.location.href = '#/score';
       } else {
-        $window.location.href = '/#/change/' + (parseInt($scope.round) + 1) + '/';
+        $window.location.href = '#/change/' + (parseInt($scope.round) + 1) + '/';
       }
     }
   }
@@ -170,7 +170,7 @@ function RoundCtrl($scope, $rootScope, $routeParams, $timeout, $window, db) {
 function ChangeCtrl($scope, $rootScope, $routeParams, $window, db) {
   //check last round, last player
   if ($routeParams.round == 3 && db.get('players').indexOf($routeParams.player) == (db.get('players').length - 1)) {
-    $window.location.href = '/#/score';
+    $window.location.href = '#/score';
   }
 
   var roundSentence = db.get('roundSentences');

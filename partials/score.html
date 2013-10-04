@@ -6,17 +6,9 @@
   </tr>
 </thead>
 <tbody>
-  <tr>
-    <td>15</td>
-    <td>Mark</td>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td>Jacob</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Larry</td>
+  <tr ng-repeat="score in scores">
+    <td>{{score.score}}</td>
+    <td>{{score.name}}</td>
   </tr>
 </tbody>
 </table>

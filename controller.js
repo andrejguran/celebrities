@@ -195,7 +195,7 @@ function ChangeCtrl($scope, $rootScope, $routeParams, $window, db) {
 function ScoreCtrl($scope, $rootScope, $routeParams, $window, db) {  
   $rootScope.buttonTemplate = 'partials/button-primary.html';
   $rootScope.button = 'New game';
-  $rootScope.buttonHref = '/';
+  $rootScope.buttonHref = '.';
   $scope.scores = db.get('score').sort(function(a,b) {
     return b.score - a.score;
   });

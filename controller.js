@@ -117,7 +117,7 @@ function RoundCtrl($scope, $rootScope, $routeParams, $timeout, $window, db) {
   $scope.guessed = db.get('guessed');
   $scope.name = names[ 0 ];
 
-  $scope.countDown = 3;
+  $scope.countDown = 30;
 
   $scope.onTimeout = function() {
     $scope.countDown--;
